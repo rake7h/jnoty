@@ -1,10 +1,9 @@
 {
     "name": "jnoty",
     "authors": [
-    "rakesh singh <rake7h@gmail.com>"
+        { "name": "Rakesh singh", "email": "rake7h@gmail.com" },
   ],
-    "description": "jnoty is a jQuery plugin that show OS Xs Growl like notification in web app.
-    ",
+    "description": "jnoty is a jQuery plugin that show OS Xs Growl like notification in web app.",
     "main": "",
     "keywords": [
     "alerts",
