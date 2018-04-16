@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jnoty</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../jnoty.js"></script>
+    <link rel="stylesheet" type="text/css" href="../jnoty.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="color:#112548;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href>jnoty</a>
+    </nav>
+    <div class="container" style="margin-top:10%;">
+        <div class="d-flex align-item-center flex-column">
+            <div>
+                <h1 style="font-size:24px;">jnoty is a jQuery plugin that show OS X's Growl like notification in web app.</h1>
+            </div>
+            <div class="mt-4 mb-4">
+                <code class="w-50">
+            $.<span style="color:#5243AA;">jnoty</span>(<span style="color:#FF8B00;">"Your email was verified."</span>, {<br>
+            <span style="color:#5243AA;">sticky:</span> <span style="color:#FF8B00;">true,</span><br>
+            <span style="color:#5243AA;">header:</span> <span style="color:#FF8B00;">'Success',</span><br>
+            <span style="color:#5243AA;">theme:</span> <span style="color:#FF8B00;"> 'jnoty-success',</span><br>
+            <span style="color:#5243AA;">icon:</span> <span style="color:#FF8B00;">  'fa fa-check-circle'</span><br>
+        });<br>
+        </code>
+            </div>
+            <div>
+                <button class="btn btn-secondary" onclick="demo();">Show me the demo</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function demo() {
+            $.jnoty("Your email was verified.", {
+                sticky: true,
+                header: 'Success',
+                theme: 'jnoty-success',
+                icon: 'fa fa-check-circle'
+            });
+        }
+    </script>
+</body>
+
+</html>
