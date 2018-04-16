@@ -1,27 +1,16 @@
 {
     "name": "jnoty",
+    "main": "jnoty.js",
+    "homepage": "https://github.com/visualapps/jnoty",
     "authors": [
-        { "name": "Rakesh singh", "email": "rake7h@gmail.com" },
+    "rake7h <rake7h@gmail.com>"
   ],
-    "description": "jnoty is a jQuery plugin that show OS Xs Growl like notification in web app.",
-    "main": "",
+    "description": "jnoty is a jQuery plugin that show OS X's Growl like notification in web app.",
     "keywords": [
     "alerts",
-    "growl",
+    "notification",
     "bootstrap alerts",
-    "toast",
-    "notification"
-  ],
-    "license": "MIT",
-    "homepage": "https://visualapps.github.io/jnoty",
-    "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-    "dependencies": {
-
-    }
+    "growl"
+],
+    "license": "MIT"
 }
