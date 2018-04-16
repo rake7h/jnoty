@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>jnoty</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../jnoty.js"></script>
-    <link rel="stylesheet" type="text/css" href="../jnoty.css">
+    <script type="text/javascript" src="jnoty.js"></script>
+    <link rel="stylesheet" type="text/css" href="jnoty.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -28,21 +29,67 @@
         });<br>
         </code>
             </div>
-            <div>
-                <button class="btn btn-secondary" onclick="demo();">Show me the demo</button>
+            <div class="d-flex align-items-end">
+                <div style="width:13%;">
+                    <span>Select theme</span>
+                    <select class="custom-select" name="selector">
+  <option selected value="success">Success</option>
+  <option value="warning">Warning</option>
+  <option value="info">Information</option>
+  <option value="danger">Danger</option>
+                    </select></div>
+
+                <div>
+                    <button class="btn btn-success ml-1" onclick="demo();">Show me the demo</button>
+                </div>
             </div>
         </div>
     </div>
     <script>
         function demo() {
-            $.jnoty("Your email was verified.", {
-                sticky: true,
-                header: 'Success',
-                theme: 'jnoty-success',
-                icon: 'fa fa-check-circle'
-            });
+            var theme = $('select[name=selector]').val();
+            switch (theme) {
+                case "success":
+                    $.jnoty("Your email was verified.", {
+                        sticky: true,
+                        header: 'Success',
+                        theme: 'jnoty-' + theme,
+                        icon: 'fa fa-check-circle'
+                    });
+                    break;
+                case "warning":
+                    $.jnoty("I am a warning message", {
+                        sticky: true,
+                        header: 'Warning',
+                        theme: 'jnoty-' + theme,
+                        icon: 'fa fa-info-circle'
+                    });
+                    break;
+                case "info":
+                    $.jnoty("I am a info message", {
+                        sticky: true,
+                        header: 'Information',
+                        theme: 'jnoty-' + theme,
+                        icon: 'fa fa-info-circle'
+                    });
+                    break;
+                case "danger":
+                    $.jnoty("I am a warning message", {
+                        sticky: true,
+                        header: 'Danger',
+                        theme: 'jnoty-' + theme,
+                        icon: 'fa fa-info-circle'
+                    });
+                    break;
+                default:
+                    $.jnoty("I am a info message", {
+                        sticky: true,
+                        header: 'Information',
+                        theme: 'jnoty-' + theme,
+                        icon: 'fa fa-info-circle'
+                    });
+            }
         }
     </script>
 </body>
-
 </html>
