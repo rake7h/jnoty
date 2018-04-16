@@ -31,7 +31,7 @@
 }
 
 .jnoty-message {
-    margin-left: 22px;
+    margin-left: 17px;
     /* align the message to header*/
     margin-top: 5px;
 }
@@ -70,7 +70,6 @@
 
 .jnoty-container {
     background-color: #fff;
-    opacity: 0.9;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
     zoom: 1;
