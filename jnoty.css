@@ -99,6 +99,7 @@
 
 .jnoty-content {
   padding: 0px 10px 8px 10px;
+  word-break: break-word;
 }
 
 .jnoty-title {
